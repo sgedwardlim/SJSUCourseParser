@@ -16,9 +16,12 @@ http://info.sjsu.edu/web-dbgen/splash/schedules.html
 <p>
   <ul>
     <li>Download the corresponding year and semester that you wish to parse the data in</li>
-    <li>Open pdf file in adobe or pdf reader and save as .txt file</li>
-    <li>Override contents of decodedata.txt with data that you just converted <b>(Just copy and paste contents, do not rename file to overide)</b></li>
+    <li>Open pdf file in adobe or pdf reader and save as <code>sjsuclassdata.txt</code> file</li>
+    <li>Run the command <code>iconv -f "iso-8859-1" -t "utf-8" sjsuclassdata.txt > sjsuclassdata-utf8.txt</code></li>
+    <li>The above will convert the encoded file to a UTF-8 encoding which will allow the script to parse the data</li>
     <li>Run script and let the magic happen</li>
+    <li>Data will be stored in the path <code>../misc/output.csv</code></li>
+    <br />
     <img src="misc/terminal.png" />
   </ul>
 </p>
