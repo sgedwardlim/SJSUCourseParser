@@ -19,6 +19,6 @@ http://info.sjsu.edu/web-dbgen/splash/schedules.html
     <li>Open pdf file in adobe or pdf reader and save as .txt file</li>
     <li>Override contents of decodedata.txt with data that you just converted <b>(Just copy and paste contents, do not rename file to overide)</b></li>
     <li>Run script and let the magic happen</li>
-    <img src="terminal.png" />
+    <img src="misc/terminal.png" />
   </ul>
 </p>
