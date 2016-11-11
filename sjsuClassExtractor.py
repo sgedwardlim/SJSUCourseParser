@@ -21,11 +21,11 @@ lectureRegex = re.compile('''
 ''', re.VERBOSE)
 
 # create a new csv file in the same directory
-outputFile = open('output.csv', 'w', newline='')
+outputFile = open('misc/output.csv', 'w', newline='')
 outputWriter = csv.writer(outputFile)
 
 # Open file that contains the Data to be parsed in .txt format
-file = open('decodedata.txt', 'r')
+file = open('misc/decodedata.txt', 'r')
 
 regexMatches = lectureRegex.findall(file.read())
 
