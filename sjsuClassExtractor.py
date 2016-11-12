@@ -8,7 +8,7 @@ lectureRegex = re.compile('''
         # Sample Data
         # LING 203 SEMANTIC STRUC 01 47621 3 SEM P 13/15 MW 1500-1615 08/24/16-12/12/16 CL 205 K MOORE
         # LING 298 SPEC STUDIES 01 45315 1-4 SUP 61,73 P 0/0 TBA TBA 08/24/16-12/12/16
-        ([A-Z]+\s\d+\S+)
+        ([A-Z]+\d*\s\d+\S+)
         \s+
         (?:\(button\)\s*?)?(?:\(button\)\s*?)?
         ([A-Z]+.+?)
@@ -22,7 +22,7 @@ lectureRegex = re.compile('''
 ''', re.VERBOSE)
 
 # create a new csv file in the same directory
-outputFile = open('misc/output.csv', 'w', newline='')
+outputFile = open('misc/sjsuclassdata.csv', 'w', newline='')
 outputWriter = csv.writer(outputFile)
 
 # Open file that contains the Data to be parsed in .txt format
